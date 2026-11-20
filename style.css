@@ -127,7 +127,7 @@ body {
 .hero::before {                      /* blurred B&W photo */
     content: "";
     position: absolute; inset: -20px;
-    background: url("images/hero-bus-stop.png") center / cover no-repeat;
+    background: url("street-bus-stop.png") center / cover no-repeat;
     filter: blur(5px);
     z-index: -2;
 }
@@ -150,7 +150,7 @@ body {
     min-height: 360px;
     display: flex; align-items: center;
     color: #fff;
-    background: #111 url("images/tagline-jeepney.png") center / cover no-repeat;
+    background: #111 url("tagline-jeepney.png") center / cover no-repeat;
 }
 .tagline h2 { font-size: 1.4rem; font-weight: 700; margin: 0; }
 

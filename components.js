@@ -25,13 +25,13 @@ const HEADERS = {
     mark: `
         <div class="page-container">
             <a href="index.html" class="brand">
-                <img src="images/logo-white.png" alt="PASADA logo" class="brand-mark">
+                <img src="logo-white.png" alt="PASADA logo" class="brand-mark">
                 <span class="brand-word">PASADA</span>
             </a>
         </div>`,
     home: `
         <a href="index.html" class="brand">
-            <img src="images/logo-white.png" alt="PASADA logo" class="brand-mark">
+            <img src="logo-white.png" alt="PASADA logo" class="brand-mark">
             <span class="brand-word">PASADA</span>
         </a>
         <form class="search-pill" id="search-form" role="search">
