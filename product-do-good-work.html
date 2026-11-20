@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Do Good Work Tee | PASADA</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- Fonts: Space Grotesk + Space Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="order.js" defer></script>
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!-- HEADER -->
+    <header id="site-header" data-variant="mark"></header>
+
+    <!-- MAIN CONTENT -->
+    <div class="product-layout">
+
+        <!-- LEFT: product info, details & reviews -->
+        <main class="product-main">
+
+            <div class="product-top">
+                <div class="product-photo">
+                    <img src="images/tee-do-good-work.png" alt="Do Good Work Tee">
+                </div>
+
+                <form class="product-info" id="order-form">
+                    <h1>Do Good Work Tee</h1>
+                    <p class="product-price">P499.00</p>
+
+                    <!-- Size selector -->
+                    <div class="size-group" role="group" aria-label="Size selection">
+                        <input type="radio" class="btn-check" name="size" id="Small" autocomplete="off" required>
+                        <label for="Small">S</label>
+
+                        <input type="radio" class="btn-check" name="size" id="Medium" autocomplete="off">
+                        <label for="Medium">M</label>
+
+                        <input type="radio" class="btn-check" name="size" id="Large" autocomplete="off">
+                        <label for="Large">L</label>
+                    </div>
+                    <p id="shirt-variant" hidden>Do Good Work</p>
+
+                    <!-- Quantity -->
+                    <div class="qty-box" role="group" aria-label="Quantity">
+                        <button type="button" id="qty-minus" aria-label="Decrease quantity">-</button>
+                        <output id="qty-value" aria-live="polite">1</output>
+                        <button type="button" id="qty-plus" aria-label="Increase quantity">+</button>
+                    </div>
+
+                    <!-- Action buttons -->
+                    <div class="btn-row">
+                        <button type="button" id="add-to-cart" class="btn-pasada btn-cart">Add to Cart</button>
+                        <button type="submit" class="btn-pasada btn-order">Order Now</button>
+                    </div>
+
+                    <p class="sold">6767 sold</p>
+                    <p class="cart-msg" id="cart-msg" role="status"></p>
+                </form>
+            </div>
+
+            <section class="product-details">
+                <h2>Details</h2>
+                <p>Made with 100% cotton</p>
+                <p>Breathable, soft, and versatile</p>
+            </section>
+
+            <section class="reviews">
+                <h2>Customer Reviews</h2>
+
+                <div class="rating-row">
+                    <span class="score">4.0</span>
+                    <span class="stars" aria-label="4 out of 5 stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill off"></i></span>
+                </div>
+
+                <div class="review-list">
+                        <article class="review">
+                            <div class="avatar" aria-hidden="true"></div>
+                            <div class="review-body">
+                                <span class="stars" aria-label="4 out of 5 stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill off"></i></span>
+                                <p>Lucy | 10/13/26</p>
+                                <p>Wearable and nice</p>
+                            </div>
+                            <div class="review-photo"><svg viewBox="0 0 124 90" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Review photo placeholder"><rect width="124" height="90" fill="#9B9B9B"/><line x1="0" y1="0" x2="124" y2="90" stroke="#D0D0D0" stroke-width="1"/><line x1="124" y1="0" x2="0" y2="90" stroke="#D0D0D0" stroke-width="1"/></svg></div>
+                        </article>
+                        <article class="review">
+                            <div class="avatar" aria-hidden="true"></div>
+                            <div class="review-body">
+                                <span class="stars" aria-label="4 out of 5 stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill off"></i></span>
+                                <p>Lucy | 10/13/26</p>
+                                <p>Wearable and nice</p>
+                            </div>
+                            <div class="review-photo"><svg viewBox="0 0 124 90" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Review photo placeholder"><rect width="124" height="90" fill="#9B9B9B"/><line x1="0" y1="0" x2="124" y2="90" stroke="#D0D0D0" stroke-width="1"/><line x1="124" y1="0" x2="0" y2="90" stroke="#D0D0D0" stroke-width="1"/></svg></div>
+                        </article>
+                </div>
+            </section>
+        </main>
+
+        <!-- RIGHT: other products -->
+        <aside class="product-side">
+            <h2>Check Out our other products here!</h2>
+                <a href="product-dont-be-late.html" class="side-item">
+                    <div class="thumb"><img src="images/tee-dont-be-late.png" alt="Don’t Be Late tee" loading="lazy"></div>
+                    <strong>Don’t Be Late</strong>
+                    <span class="price">P 499.00</span>
+                    <span class="stars" aria-label="5 out of 5 stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                    <span class="sold-sm">6767 sold</span>
+                </a>
+                <a href="product-everyday-comfort.html" class="side-item">
+                    <div class="thumb"><img src="images/tee-everyday-comfort.png" alt="Everyday Comfort tee" loading="lazy"></div>
+                    <strong>Everyday Comfort</strong>
+                    <span class="price">P 499.00</span>
+                    <span class="stars" aria-label="5 out of 5 stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+                    <span class="sold-sm">6767 sold</span>
+                </a>
+        </aside>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="site-footer"></footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Shared Components (header + footer) -->
+    <script src="components.js"></script>
+
+</body>
+</html>
